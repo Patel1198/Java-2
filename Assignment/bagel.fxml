@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #686868;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Final_Project_Bagel.finalBagelController">
+   <children>
+      <Pane fx:id="submain" prefHeight="600.0" prefWidth="900.0">
+         <children>
+            <Button fx:id="calcTotal" layoutX="176.0" layoutY="557.0" mnemonicParsing="false" onAction="#calculateTotal" text="Calculate Total">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="printRec" text="  Print Reciept" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Label>
+            <Pane fx:id="bagelMain" layoutY="43.0" prefHeight="271.0" prefWidth="450.0" style="-fx-border-color: #383838; -fx-background-color: #DCDCDC;">
+               <children>
+                  <Label fx:id="headBagel" layoutX="45.0" layoutY="1.0" text="Pick a Bagel">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="bagelNone" layoutX="26.0" layoutY="75.0" mnemonicParsing="false" text="None">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Bagel" />
+                     </toggleGroup>
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="bagelWhi" layoutX="26.0" layoutY="134.0" mnemonicParsing="false" text="White($1.25)" toggleGroup="$Bagel">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="bagelWho" layoutX="26.0" layoutY="199.0" mnemonicParsing="false" text="Whole Wheat($1.50)" toggleGroup="$Bagel">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <TextField fx:id="whe" layoutX="292.0" layoutY="126.0" prefHeight="39.0" prefWidth="132.0" style="-fx-border-color: #383838;" />
+                  <TextField fx:id="who" layoutX="292.0" layoutY="191.0" prefHeight="39.0" prefWidth="132.0" style="-fx-border-color: #383838;" />
+                  <Label fx:id="bagelQty" layoutX="310.0" layoutY="74.0" text="QTY:">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bagelError" layoutX="160.0" layoutY="37.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="toppingsMain" layoutY="314.0" prefHeight="243.0" prefWidth="450.0" style="-fx-border-color: #383838; -fx-background-color: #DCDCDC;">
+               <children>
+                  <Label fx:id="headToppings" layoutX="45.0" layoutY="1.0" text="Pick Your Toppings">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="cream" layoutX="44.0" layoutY="51.0" mnemonicParsing="false" text="Cream Cheese($0.50)">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="but" layoutX="44.0" layoutY="87.0" mnemonicParsing="false" text="Butter($0.25)">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="blue" layoutX="44.0" layoutY="127.0" mnemonicParsing="false" text="Blueberry Jam($0.75)">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="ras" layoutX="44.0" layoutY="167.0" mnemonicParsing="false" text="Rasberry Jam($0.75)">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="peach" layoutX="44.0" layoutY="207.0" mnemonicParsing="false" text="Peach Jelly($0.75)">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </CheckBox>
+               </children></Pane>
+            <Pane fx:id="CoffeeMain" layoutX="450.0" layoutY="43.0" prefHeight="271.0" prefWidth="450.0" style="-fx-background-color: #DCDCDC; -fx-border-color: #383838;">
+               <children>
+                  <Label fx:id="headCoffee" layoutX="45.0" layoutY="1.0" text="Want Coffee with That?">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="non" layoutX="36.0" layoutY="60.0" mnemonicParsing="false" text="None">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Coffee" />
+                     </toggleGroup>
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="regu" layoutX="36.0" layoutY="108.0" mnemonicParsing="false" text="Regular($1.25)" toggleGroup="$Coffee">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="capp" layoutX="36.0" layoutY="158.0" mnemonicParsing="false" text="Cappaccino($2.00)" toggleGroup="$Coffee">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="caff" layoutX="36.0" layoutY="212.0" mnemonicParsing="false" text="Cafe Au Lait($1.75)" toggleGroup="$Coffee">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <Label fx:id="qty" layoutX="271.0" layoutY="47.0" text="QTY:">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="reg" layoutX="271.0" layoutY="94.0" prefHeight="39.0" prefWidth="123.0" style="-fx-border-color: #383838;" />
+                  <TextField fx:id="cap" layoutX="271.0" layoutY="151.0" prefHeight="39.0" prefWidth="123.0" style="-fx-border-color: #383838;" />
+                  <TextField fx:id="caf" layoutX="271.0" layoutY="205.0" prefHeight="39.0" prefWidth="123.0" style="-fx-border-color: #383838;" />
+               </children></Pane>
+            <Pane fx:id="priceMain" layoutX="450.0" layoutY="314.0" prefHeight="243.0" prefWidth="450.0" style="-fx-border-color: #383838; -fx-background-color: #DCDCDC;">
+               <children>
+                  <Label fx:id="headPrice" layoutX="45.0" layoutY="1.0" text="Price Summary">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sub" layoutX="49.0" layoutY="49.0" text="Subtotal">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sale" layoutX="49.0" layoutY="99.0" text="Salestax 13%">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tot" layoutX="49.0" layoutY="154.0" text="Total Sale">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="subTotal" layoutX="222.0" layoutY="49.0" text="\$0.00">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tax" layoutX="222.0" layoutY="99.0" text="\$0.00">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalSale" layoutX="222.0" layoutY="154.0" text="\$0.00">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Button fx:id="reset" layoutX="393.0" layoutY="557.0" mnemonicParsing="false" onAction="#reset" text="Reset Form">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="exit" layoutX="589.0" layoutY="557.0" mnemonicParsing="false" onAction="#exit" text="Exit System">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</FlowPane>

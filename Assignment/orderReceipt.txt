@@ -1,0 +1,17 @@
+***********SHERIDAN BAGEL SHOP***********
+Fri Aug 14 00:21:46 EDT 2020
+Item:			Qty		Amount
+Whole Bagel		10	15.0
+Toppings:
+
+ Cream Cheese		1		$0.50
+ Butter		1		$0.25
+ Blueberry Jam		1		$0.75
+ Raspberry Jam		1		$0.75
+ Peach Jelly		1		$0.75
+Cappuccino Coffee		10		20.0
+				-------------------
+Pretax Total				$ 38.00
+Sales Tax 13%				$ 4.94
+Total Sale 					$ 42.94
+******THANK YOU FOR YOUR ORDER******
