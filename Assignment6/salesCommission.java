@@ -1,6 +1,6 @@
 package Assignment6;
 /**
- * @author Jay Patel
+ * @author Jay Patel 
  * @version 1.0
  */
 // import statements for library access of predefined methods
